@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row m-3">
+        <h1>Create Short URL</h1>
+    </div>
+    <div class="row m-3">
+        <form [formGroup]="urlForm" (ngSubmit)="createUrl()">
+            <div class="row">
+                <div class="col">
+                    <label for="" class="mb-2">Enter the long URL</label>
+                    <input type="text" class="form-control" formControlName="longurl" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit" value="Create short URL" class="btn btn-primary mt-4" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
